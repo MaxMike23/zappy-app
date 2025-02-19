@@ -19,12 +19,12 @@ def validate_ip(ip_address):
     return bool(pattern.match(ip_address))
 
 
-def show_spinner_ip(ip_address, duration=6):
+def show_spinner_ip(ip_address, duration=10):
     """
     Displays a spinning line indicator while pinging an IP address.
 
     :param ip_address: The IP address of the device
-    :param duration: The duration of the spinning indicator in seconds, default is 6
+    :param duration: The duration of the spinning indicator in seconds, default is 10
     """
     spinner = itertools.cycle(['-', '\\', '|', '/'])
     end_time = time.time() + duration
