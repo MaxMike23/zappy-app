@@ -5,6 +5,8 @@ import sys
 def get_network_adapters():
     """
     Retrieves the list of network adapters available on the system and assigns numbers to them.
+
+    :return: A list of network adapters, or an empty list if none are available
     """
     try:
         result = subprocess.run(
