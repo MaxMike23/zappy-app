@@ -1,1 +1,10 @@
+# Virtual Environments
 venv/
+
+# Any pycache directories
+src/__pycache__
+src/basic_it/__pycache__
+src/advanced_it/__pycache__
+
+# Any testing scripts
+test.py
